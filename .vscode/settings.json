@@ -1,5 +1,11 @@
 {
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-file",
+    "onStartup": ["all-tests"]
+  },
+  "jest.rootPath": "./codebase"
 }

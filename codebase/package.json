@@ -10,22 +10,30 @@
   "scripts": {
     "start": "parcel public/index.html",
     "build": "parcel build public/index.html",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "test": "jest ./src"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^12.0.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-jest": "^27.1.0",
+    "enzyme": "^3.11.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.24.0",
     "jest": "^27.1.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-robot": "^1.0.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "react-test-renderer": "^17.0.2"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.24.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -37,7 +45,8 @@
     },
     "setupFilesAfterEnv": [
       "./src/Test/jestSetup.js"
-    ]
+    ],
+    "snapshotResolver": "./src/Test/snapshotResolver.js"
   },
   "browserslist": [
     "since 2017-06"
