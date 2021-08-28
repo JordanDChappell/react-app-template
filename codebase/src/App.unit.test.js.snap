@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component matches snapshot 1`] = `
+<div
+  className="app"
+>
+  <header>
+    <h1
+      className="heading"
+    >
+      React App Template
+    </h1>
+    <p>
+      Edit 
+      <code>
+        src/App.js
+      </code>
+       and save to reload.
+    </p>
+  </header>
+</div>
+`;

@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+# Here we are telling web crawlers to get lost!
+# You probably want to update these values.
+User-agent: *
+Disallow: /
