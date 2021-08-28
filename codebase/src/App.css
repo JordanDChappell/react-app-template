@@ -1,0 +1,20 @@
+html  {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+}
+header {
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  text-align: center;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
