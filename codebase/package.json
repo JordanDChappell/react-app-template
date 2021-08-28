@@ -8,17 +8,38 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "lint": "eslint ./src"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "jest": "^27.1.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-robot": "^1.0.0",
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "eslint-plugin-import": "^2.24.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.css$": "./src/Test/Mocks/fileMock.js",
+      "^.+\\.(jpg|ico|jpeg|png|gif|eot|svg|ttf|woff|woff2)$": "./src/Test/Mocks/fileMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "./src/Test/jestSetup.js"
+    ]
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "capaj.vscode-exports-autocomplete",
+    "xabikos.javascriptsnippets",
+    "orta.vscode-jest",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "burkeholland.simple-react-snippets"
+  ]
+}
